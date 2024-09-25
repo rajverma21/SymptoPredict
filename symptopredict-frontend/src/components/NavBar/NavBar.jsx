@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg'
 
 const Navbar = () => {
   return (
-    <nav className=' py-5 fixed top-0 left-0 w-full z-10'>
+    <nav className='py-5 fixed top-0 left-0 w-full z-50'>
       <div className='w-[70%] mx-auto flex items-center justify-between bg-transparent bg-opacity-80 py-3 px-10 backdrop-blur-sm border-2 border-[#b4bef1a4] rounded-full'>
         <div>
           <img src={logo} alt='logo' />
