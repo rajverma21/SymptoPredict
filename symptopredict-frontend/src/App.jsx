@@ -4,6 +4,7 @@ import HomePage from './components/HomePage/HomePage.jsx'
 import AnimatedCursor from 'react-animated-cursor'
 import Signup from './components/Signup/Signup.jsx'
 import Login from './components/Login/Login.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -36,10 +37,16 @@ const App = () => {
           '.link'
         ]}
       />
-      {/* {loading ? <Preloader /> : <HomePage />} */}
-      <HomePage />
-      <Signup />
-      <Login />
+      {loading ? <Preloader /> : null}
+      <Router>
+        <div>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/signup' element={<Signup />} />
+            <Route path='/login' element={<Login />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   )
 }

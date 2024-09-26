@@ -5,6 +5,7 @@ import githubLogo from '../../assets/githubLogo.svg'
 import facebookLogo from '../../assets/facebookLogo.svg'
 import password1 from '../../assets/hidden.png'
 import password2 from '../../assets/visible.png'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   const [Type, setType] = useState('password')
@@ -51,7 +52,7 @@ const Login = () => {
               value={Email}
               onChange={e => setEmail(e.target.value)}
               id='email'
-              className='py-[5px] px-4 text-lg rounded-md bg-white/95 text-gray-800 buttonFont placeholder-gray-400 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'
+              className='py-[5px] px-4 l:text-lg rounded-md bg-white/95 text-gray-800 buttonFont placeholder-gray-400 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'
               placeholder='username@gmail.com'
               required
             />
@@ -60,7 +61,7 @@ const Login = () => {
             <label htmlFor='password' className='text-white'>
               Password
             </label>
-            <div className='flex text-lg rounded-md overflow-hidden bg-white/95 text-gray-800 buttonFont placeholder-gray-300 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'>
+            <div className='flex l:text-lg rounded-md overflow-hidden bg-white/95 text-gray-800 buttonFont placeholder-gray-300 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'>
               <input
                 value={Password}
                 onChange={e => setPassword(e.target.value)}
@@ -78,7 +79,7 @@ const Login = () => {
                 />
               </button>
             </div>
-            <a href='#' className='text-white'>
+            <a href='#' className='text-sm l:text-md text-white'>
               Forgot Password?
             </a>
           </div>
@@ -102,12 +103,10 @@ const Login = () => {
             <img src={facebookLogo} alt='Facebook' />
           </button>
         </div>
-        <p className='text-sm text-white'>
+        <Link to='/signup' className='text-sm text-white'>
           Don't have an account?{' '}
-          <a href='#' className='font-semibold'>
-            Register for free
-          </a>
-        </p>
+          <span className='font-semibold'>Register for free</span>
+        </Link>
       </div>
     </div>
   )

@@ -5,6 +5,7 @@ import githubLogo from '../../assets/githubLogo.svg'
 import facebookLogo from '../../assets/facebookLogo.svg'
 import password1 from '../../assets/hidden.png'
 import password2 from '../../assets/visible.png'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   const [Type, setType] = useState('password')
@@ -53,7 +54,7 @@ const Signup = () => {
               value={Username}
               onChange={e => setUsername(e.target.value)}
               id='username'
-              className='py-[5px] px-4 text-lg rounded-md bg-white/95 text-gray-800 buttonFont placeholder-gray-400 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'
+              className='py-[5px] px-4 l:text-lg rounded-md bg-white/95 text-gray-800 buttonFont placeholder-gray-400 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'
               placeholder='username'
               required
             />
@@ -67,7 +68,7 @@ const Signup = () => {
               value={Email}
               onChange={e => setEmail(e.target.value)}
               id='email'
-              className='py-[5px] px-4 text-lg rounded-md bg-white/95 text-gray-800 buttonFont placeholder-gray-400 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'
+              className='py-[5px] px-4 l:text-lg rounded-md bg-white/95 text-gray-800 buttonFont placeholder-gray-400 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'
               placeholder='username@gmail.com'
               required
             />
@@ -76,7 +77,7 @@ const Signup = () => {
             <label htmlFor='password' className='text-white'>
               Password
             </label>
-            <div className='flex text-lg rounded-md overflow-hidden bg-white/95 text-gray-800 buttonFont placeholder-gray-300 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'>
+            <div className='flex l:text-lg rounded-md overflow-hidden bg-white/95 text-gray-800 buttonFont placeholder-gray-300 focus:outline hover:outline outline-[#2640d5] outline-2 focus:drop-shadow-lg'>
               <input
                 value={Password}
                 onChange={e => setPassword(e.target.value)}
@@ -94,9 +95,6 @@ const Signup = () => {
                 />
               </button>
             </div>
-            <a href='#' className='text-white'>
-              Forgot Password?
-            </a>
           </div>
           <button
             type='submit'
@@ -117,12 +115,10 @@ const Signup = () => {
             <img src={facebookLogo} alt='Facebook' />
           </button>
         </div>
-        <p className='text-sm text-white'>
+        <Link to='/login' className='text-sm text-white'>
           Already have an account?{' '}
-          <a href='#' className='font-semibold'>
-            Login here
-          </a>
-        </p>
+          <span className='font-semibold'>Login here</span>
+        </Link>
       </div>
     </div>
   )
