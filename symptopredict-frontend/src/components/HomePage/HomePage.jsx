@@ -30,12 +30,12 @@ const HomePage = () => {
         </p>
         <Link
           to='/login'
-          className='mt-3 px-5 l:px-7 py-2 text-xs l:text-sm sm:text-base  bg-[#261e71] text-cyan-50 rounded-lg font-medium transition duration-300 hover:bg-[#f0f0f0] hover:text-[#14163b] buttonFont'
+          className='mt-3 px-5 l:px-7 py-2 text-sm sm:text-base  bg-[#261e71] text-cyan-50 rounded-lg font-medium transition duration-300 hover:bg-[#f0f0f0] hover:text-[#14163b] buttonFont'
         >
           Join Now
         </Link>
       </div>
-      {/* <Footer/> */}
+      <Footer />
     </>
   )
 }
