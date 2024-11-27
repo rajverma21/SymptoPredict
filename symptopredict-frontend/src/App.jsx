@@ -5,6 +5,8 @@ import AnimatedCursor from 'react-animated-cursor'
 import Signup from './components/Signup/Signup.jsx'
 import Login from './components/Login/Login.jsx'
 import Contact from './components/Contact/Contact.jsx'
+import Services from './components/Services/Services.jsx'
+import AboutUs from './components/About/AboutUs.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
@@ -46,6 +48,8 @@ const App = () => {
             <Route path='/signup' element={<Signup />} />
             <Route path='/login' element={<Login />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/services' element={<Services />} />
+            <Route path='/about' element={<AboutUs />} />
           </Routes>
         </div>
       </Router>
