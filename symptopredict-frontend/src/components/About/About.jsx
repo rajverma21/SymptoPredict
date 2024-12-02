@@ -69,7 +69,7 @@ const teamMembers = [
     image: ananyaImage
   },
   {
-    name: 'Pallavi Das',
+    name: 'Pallavi Kumari',
     position: 'Backend Developer',
     description:
       'Focused on creating personalized fruit diets based on predicted diseases.',
