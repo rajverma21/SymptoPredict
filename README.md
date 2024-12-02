@@ -17,7 +17,7 @@ Early detection of diseases is critical for effective treatment and improved pat
 ## 🖼️ Screenshots
 
 ![image](https://github.com/user-attachments/assets/44856e3f-0c3e-49f2-afa7-97fa41b419ae)
-![image](https://github.com/user-attachments/assets/d0479c0a-3375-4ffb-bb6a-b2ed9550260d)
+![image](https://github.com/user-attachments/assets/9eb9a7e2-fb24-4d76-8247-0ef4c15f3670)
 ![image](https://github.com/user-attachments/assets/464d93e1-d018-45f9-8e55-6951aae0d1c2)
 ![image](https://github.com/user-attachments/assets/1b95456a-5763-42b0-bde6-17cfaa72f467)
 
